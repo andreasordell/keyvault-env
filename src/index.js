@@ -8,10 +8,10 @@ const defaults = {
 
 function config(options) {
     // setup options
-    let options = Object.assign({}, defaults, options);
+    let opts = Object.assign({}, defaults, options);
 
     return new Promise(async (resovle, reject) => {
-        const {keyVaultName} = options;
+        const {keyVaultName} = opts;
         if (!keyVaultName || keyVaultName.length === 0) {
             debug('No Key Vault name found, aborting.');
             return reject('No key vault configured. Set options.keyVaultName.');

@@ -6,9 +6,17 @@
   "repository": "https://github.com/andreasordell/keyvault-env.git",
   "author": "Andreas Bergström",
   "license": "MIT",
+  "scripts": {
+    "build": "babel ./src -d ./lib"
+  },
   "dependencies": {
     "@azure/identity": "^1.0.2",
     "@azure/keyvault-secrets": "^4.0.2",
     "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.8.4",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4"
   }
 }
