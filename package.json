@@ -1,0 +1,14 @@
+{
+  "name": "keyvalt-env",
+  "version": "1.0.0",
+  "description": "Sets environment variables from Azure Key Vault.",
+  "main": "index.js",
+  "repository": "https://github.com/andreasordell/keyvault-env.git",
+  "author": "Andreas Bergström",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/identity": "^1.0.2",
+    "@azure/keyvault-secrets": "^4.0.2",
+    "debug": "^4.1.1"
+  }
+}
